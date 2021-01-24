@@ -199,3 +199,10 @@ function closeNav(i) {
   //removes overlay display
   document.getElementById('backdrop').style.display = "none"
 }
+
+function closeNav1() {
+  //closes side navbar totally
+  document.getElementById("mySidenav").style.width = "0"
+  //removes overlay display
+  document.getElementById('backdrop').style.display = "none"
+}
