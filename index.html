@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <nav>
+        <span onclick="openNav()" class="mobile-nav-open-icon">&#9776</span>
+     </nav> -->
+     <span class="mobile-nav-open-icon">
+        <i onclick="openNav()" class="fas fa-compact-disc" style="font-size: large; color: black;">  Library</i>
+    </span>
+     <!-- this would work as the backdrop when navbar is open-->
+     <div class="backdrop-container" id="backdrop"></div>
+     
+     <!--the would be the drawer and it's content-->
+       <div id="mySidenav" class="sidenav-container">
+     
+       <span class="drawer-close-button">
+     <!--icon for closing of the navbar-->
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav(1)">&times;</a>
+       </span>
+     <!--Each links on the navbar-->
+       <a onclick="closeNav(1)" id="home-link">Electric Chill Machine - Jacinto Design</a>
+       <a onclick="closeNav(2)" id="about-link">Seven Nation Army (Remix) - Jacinto Design</a>
+       <a onclick="closeNav(3)" id="works-link">Goodnight, Disco Queen - Jacinto Design</a>
+       <a onclick="closeNav(4)" id="contact-link">Front Row (Remix) - Metric/Jacinto Design</a>
+       <a onclick="closeNav(5)" id="contact-link">Floating with Cloud - Nirvana - 1994</a>
+       <a onclick="closeNav(6)" id="contact-link">Happiness Together - Nirvana - 1994</a>
+       <a onclick="closeNav(7)" id="contact-link">Harmony Symphony - Nirvana - 1994</a>
+       <a onclick="closeNav(8)" id="contact-link">In the Gentle Rain - Nirvana - 1994</a>
+       <a onclick="closeNav(9)" id="contact-link">Pathway to Peace - Nirvana - 1994</a>
+       <a onclick="closeNav(10)" id="contact-link">Rememberance - Nirvana - 1994</a>
+       <a onclick="closeNav(11)" id="contact-link">Resonance Within - Nirvana - 1994</a>
+       <a onclick="closeNav(12)" id="contact-link">Silences - Nirvana - 1994</a>
+       <a onclick="closeNav(13)" id="contact-link">Sweet Longings - Nirvana - 1994</a>
+       <a onclick="closeNav(14)" id="contact-link">The Local Train - Choo Lo - Vaibhav Sinha</a>
+     
+     </div>
+    <div class="player-container">
+        <!-- Song -->
+        <div class="img-container">
+            <img src="img/jacinto-1.jpg" alt="Album Art">
+        </div>
+        <h2 id="title">Electric Chill Machine</h2>
+        <h3 id="artist">Jacinto</h3>
+        <audio src="music/jacinto-1.mp3"></audio>
+        <!-- Progress -->
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">2:06</span>
+            </div>
+        </div>
+        <!-- Controls -->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="Previous"></i>
+            <i class="fas fa-play main-button" id="play" title="Play"></i>
+            <i class="fas fa-forward" id="next" title="Next"></i>
+            <i onclick="openNav()" class="fas fa-compact-disc" id="disc"></i>
+        </div>
+    </div>
+    <div style="color: white; writing-mode: vertical-lr; font-size: 20px;">CONCENTRATION &nbsp; &nbsp;MUSIC</div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
