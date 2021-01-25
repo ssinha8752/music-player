@@ -184,7 +184,7 @@ progressContainer.addEventListener('click', setProgressBar);
 
 function openNav() {
   //opens side navbar by 70 percent
-  document.getElementById("mySidenav").style.width = "50%" 
+  document.getElementById("mySidenav").style.width = "80%" 
 
  //opens overlay display
   document.getElementById('backdrop').style.display = "block" 
