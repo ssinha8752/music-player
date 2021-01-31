@@ -206,3 +206,7 @@ function closeNav1() {
   //removes overlay display
   document.getElementById('backdrop').style.display = "none"
 }
+
+function vol(){
+  console.log('volume changed')
+}
