@@ -112,6 +112,15 @@ function loadSong(song) {
   artist.textContent = song.artist;
   music.src = `music/${song.name}.mp3`;
   image.src = `img/${song.name}.jpg`;
+  audio = new Audio();
+  audio.src=music.src
+  audio.loop=true
+  console.log(audio)
+  volume = document.getElementById("volume");
+  volume.addEventListener("change", setVol =()=> {
+  audio.volume = volume.value/100;
+  console.log(audio.volume)
+})
 }
 
 // Current Song
@@ -123,6 +132,7 @@ function prevSong() {
   if (songIndex < 0) {
     songIndex = songs.length - 1;
   }
+  console.log(songIndex)
   loadSong(songs[songIndex]);
   playSong();
 }
